@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-custom {
+    display: flex;
+    position: fixed;
+    gap: 12px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 5px 6px #cccccc;
+
+
+}
+
+.nav-custom-header {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.nav-custom .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-custom .menu a {
+    display: inline-block;
+    color: black !important;
+    padding: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-custom-header nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-custom-header .nav-social a {
+    color: black !important;
+    text-decoration: none;
+    /*padding: 16px;*/
+
+}
+
+.nav-custom .menu a:hover {
+    color: green !important;
+
+}
+
+.container-swiper {
+    width: 100%;
+}
+.image-menu img{
+   max-width: 100%;
+    width: 250px;
+    height:250px ;
+
+}
+.direction{
+    list-style: none;
+
+    width: 35%; margin: 0 auto;
+}
+
+
+.direction li {
+    padding: 24px 0;
+    border-bottom: 1px solid #cccccc;;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    padding: 24px 0;
+
+
+}
+footer .logo{
+    width: 300px;
+}
+footer .nav-social {
+    list-style: none;
+    display: flex;
+}
+footer .nav-social a {
+    display: inline-block;
+    padding: 12px;
+}
+
+footer ul{
+    list-style: none;
+}
+footer a{
+    display: inline-block;
+    color: black!important;
+    text-decoration: none;
+    padding: 6px;
+}
+footer a:hover{
+    color: green!important;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.margin-b-6{
+    margin-bottom: 24px;
+}
+.text-2xl{
+    font-size: 24px;
+}
+.heading-lv-1{
+    font-size: 24px;
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container-swiper {
+        width: 65%;
+        margin: 0 auto
+    }
+
+    .nav-custom-header {
+        width: 80%;
+    }
+
+    .nav-custom {
+        gap: 40px;
+
+    }
+
+    .nav-custom .menu a {
+        padding: 16px;
+
+    }
+    .image-menu img{
+        max-width: 100%;
+        width: 600px;
+        height:600px ;
+
+    }
+    .container{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .heading-lv-1{
+        font-size: 32px;
+
+    }
+
+}
+
+
