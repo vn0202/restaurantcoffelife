@@ -163,6 +163,27 @@ footer a:hover{
 main{
     margin-top: 70px;
 }
+/*drop down*/
+
+.dropdown{
+    position: relative;
+    left: 0;
+    top: 100%;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content{
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 5px 6px #cccccc;
+    display: none;
+}
+.dropdown-content li a{
+display: block!important;
+    padding: 8px 12px !important;
+}
 @media screen and (min-width: 1024px) {
     main{
         margin-top: 100px;
