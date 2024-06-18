@@ -21,7 +21,8 @@
     display: flex;
     width: 100%;
     margin: 0 auto;
-    padding: 12px 0;
+    padding: 12px ;
+    justify-content: space-between;
 }
 
 .nav-custom .menu {
@@ -69,8 +70,8 @@
 }
 .direction{
     list-style: none;
-
-    width: 35%; margin: 0 auto;
+ margin: 0 auto;
+    padding: 0 16px;
 }
 
 
@@ -83,7 +84,8 @@ footer{
     justify-content: space-around;
     border-bottom: 1px solid #cccccc;
     border-top: 1px solid #cccccc;
-    padding: 24px 0;
+    padding: 16px;
+    flex-direction: column;
 
 
 }
@@ -93,6 +95,7 @@ footer .logo{
 footer .nav-social {
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 footer .nav-social a {
     display: inline-block;
@@ -112,9 +115,9 @@ footer a:hover{
     color: green!important;
 }
 .container{
-    width: 100%;
     margin: 0 auto;
     padding: 0 16px;
+
 }
 .margin-b-6{
     margin-bottom: 24px;
@@ -126,9 +129,44 @@ footer a:hover{
     font-size: 24px;
 
 }
+.menu-tablet{
+    display: none;
+}
+.menu-mobile{
+    display: block;
+}
 
-
+#menu-mobile{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#menu-mobile > div{
+    background: white;
+    height: 100%;
+}
+#menu-mobile ul.menu-list .menu-list-item a{
+    color: black!important;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #cccccc;
+}
+#menu-mobile{
+    display: none;
+}
+#btn-menu:checked + #menu-mobile{
+    display: block;
+}
+main{
+    margin-top: 70px;
+}
 @media screen and (min-width: 1024px) {
+    main{
+        margin-top: 100px;
+    }
     .container-swiper {
         width: 65%;
         margin: 0 auto
@@ -136,6 +174,7 @@ footer a:hover{
 
     .nav-custom-header {
         width: 80%;
+
     }
 
     .nav-custom {
@@ -160,6 +199,18 @@ footer a:hover{
     .heading-lv-1{
         font-size: 32px;
 
+    }
+    footer{
+        flex-direction: row;
+    }
+    .direction{
+        width: 100%;
+    }
+    .menu-tablet{
+        display: block;
+    }
+    .menu-mobile{
+        display: none;
     }
 
 }
